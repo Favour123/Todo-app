@@ -1,9 +1,10 @@
-export interface Todo {
+export type Todo = {
   id: string;
   text: string;
   completed: boolean;
   createdAt: Date;
-}
+  updatedAt?: Date;
+};
 
 export interface TodoContextType {
   todos: Todo[];
